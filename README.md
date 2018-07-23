@@ -289,6 +289,9 @@ radius |圆角度数|0|
     ```js
     wx.hideLoading()
     ```
+## 他们都在用 esay-canvas
+
+![qrcode.png](https://github.com/AfanSama/esay-canvas/blob/master/images/qrcode.jpg?raw=true/200)
 
 ## TIPS
 
