@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="{{shareImage}}" class="share-image"></image>
+  <esay-canva painting="{{painting}}" class="esay-canva" bind:getImage="eventGetImage"/>
+
+  <button bind:tap="eventDraw" type='primary' >绘制</button>
+  <button bind:tap="eventSave">保存到本地</button>
+</view>
