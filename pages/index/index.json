@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "esay-canvas 普通绘制",
+  "usingComponents": {
+    "esay-canva": "/components/esay-canva/esay-canva"
+  }
+}
