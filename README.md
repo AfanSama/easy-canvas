@@ -290,9 +290,7 @@ radius |圆角度数|0|
     wx.hideLoading()
     ```
 ## 他们都在用 esay-canvas
-
-![qrcode.png](https://github.com/AfanSama/esay-canvas/blob/master/images/qrcode.jpg?raw=true/200)
-
+<img style="width:150px" src="https://github.com/AfanSama/esay-canvas/blob/master/images/qrcode.jpg?raw=true/200">
 ## TIPS
 
 如果有什么疑问，欢迎 `issues`。 如果觉得不错，能不能送我小 ✨ ✨ ，让我有更多的动力。
