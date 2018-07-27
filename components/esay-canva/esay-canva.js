@@ -8,6 +8,7 @@ Component({
         view: []
       },
       observer(newVal, oldVal) {
+        console.log(newVal, oldVal)
         if (!this.data.isPainting) {
           if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
             if (newVal && newVal.width && newVal.height) {
@@ -145,6 +146,7 @@ Component({
         height = 0,
         borderRadius = 0
       } = params
+      console.log(params)
       if (borderRadius) {
         this.ctx.fill();
         this.ctx.beginPath()
@@ -266,6 +268,7 @@ Component({
         height = 0,
         radius = 0
       } = params
+      console.log(params)
       this.ctx.beginPath();
       this.ctx.moveTo(left, top + radius);
       this.ctx.lineTo(left, top + height - radius);
@@ -276,8 +279,10 @@ Component({
       this.ctx.quadraticCurveTo(left + width, top, left + width - radius, top);
       this.ctx.lineTo(left + radius, top);
       this.ctx.quadraticCurveTo(left, top, left, top + radius);
-      this.ctx.setFillStyle(background)
       this.ctx.closePath();
+      this.ctx.restore();
+      this.ctx.setFillStyle(background)
+      this.ctx.fill();
     },
     getImageInfo(url) {
       return new Promise((resolve, reject) => {
@@ -319,6 +324,7 @@ Component({
         height,
         canvasId: 'canvasdrawer',
         complete: res => {
+          console.log(res.tempFilePath);
           if (res.errMsg === 'canvasToTempFilePath:ok') {
             this.setData({
               showCanvas: false,
