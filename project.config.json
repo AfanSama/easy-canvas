@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.2.0",
-	"appid": "wx02f9db482f87f63c",
-	"projectname": "%E7%94%BB%E5%B8%83%E6%8F%92%E4%BB%B6",
+	"appid": "",
+	"projectname": "esay-canvas",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
