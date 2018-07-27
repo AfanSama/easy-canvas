@@ -8,7 +8,6 @@ Component({
         view: []
       },
       observer(newVal, oldVal) {
-        console.log(newVal, oldVal)
         if (!this.data.isPainting) {
           if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
             if (newVal && newVal.width && newVal.height) {
@@ -146,7 +145,6 @@ Component({
         height = 0,
         borderRadius = 0
       } = params
-      console.log(params)
       if (borderRadius) {
         this.ctx.fill();
         this.ctx.beginPath()
@@ -268,7 +266,6 @@ Component({
         height = 0,
         radius = 0
       } = params
-      console.log(params)
       this.ctx.beginPath();
       this.ctx.moveTo(left, top + radius);
       this.ctx.lineTo(left, top + height - radius);
@@ -324,7 +321,6 @@ Component({
         height,
         canvasId: 'canvasdrawer',
         complete: res => {
-          console.log(res.tempFilePath);
           if (res.errMsg === 'canvasToTempFilePath:ok') {
             this.setData({
               showCanvas: false,
