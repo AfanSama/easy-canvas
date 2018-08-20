@@ -1,6 +1,6 @@
 ## esay-canvas
 
-新增功能[矩形、圆角矩形绘制阴影效果](https://github.com/AfanSama/esay-canvas#rect)
+新增功能[矩形、圆角矩形绘制阴影效果](https://github.com/AfanSama/esay-canvas#rect-矩形线条)
 
 新增 [esay-canvas](https://github.com/AfanSama/esay-canvas)。之后同步更新。
 
