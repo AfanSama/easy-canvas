@@ -33,7 +33,9 @@ Page({
             left: 88,
             width: 280,
             height: 25,
-            radius:10
+            radius: 10,
+            shadowBlur: 10,
+            shadowColor: "rgba(255,255,255,.5)"
           },
           {
             type: 'image',
@@ -126,10 +128,21 @@ Page({
             MaxLineNumber: 2,
             breakWord: true,
             width: 125
-          }
+          },
+          {
+            type: 'rect',
+            background: '#666',
+            top: 10,
+            left: 10,
+            width: 20,
+            height: 20,
+            shadowBlur: 10,
+            shadowColor: "rgba(255,255,255,1)"
+          },
         ]
       }
     })
+    console.log(this.data)
   },
   eventSave() {
     wx.saveImageToPhotosAlbum({
@@ -144,6 +157,7 @@ Page({
     })
   },
   eventGetImage(event) {
+    console.log(event)
     wx.hideLoading()
     const {
       tempFilePath,

@@ -1,5 +1,6 @@
 ## esay-canvas
 
+新增功能[矩形、圆角矩形绘制阴影效果](https://github.com/AfanSama/esay-canvas#rect)
 
 新增 [esay-canvas](https://github.com/AfanSama/esay-canvas)。之后同步更新。
 
@@ -74,7 +75,9 @@ git clone https://github.com/AfanSama/esay-canvas
             left: 88,
             width: 280,
             height: 25,
-            radius:10
+            radius:10,
+            shadowBlur: 10,
+            shadowColor: "rgba(255,255,255,.5)"
           },
           {
             type: 'image',
@@ -207,7 +210,9 @@ git clone https://github.com/AfanSama/esay-canvas
       top: 0,
       left: 0,
       width: 375,
-      height: 555
+      height: 555,
+      shadowBlur: 10,
+      shadowColor: "rgba(255,255,255,1)"
     },
     {
       type: 'roundrect',
@@ -216,7 +221,9 @@ git clone https://github.com/AfanSama/esay-canvas
       x: 88,
       width: 280,
       height: 25,
-      radius:10
+      radius:10,
+      shadowBlur: 10,
+      shadowColor: "rgba(255,255,255,1)"
     }
   ]
 }
@@ -264,6 +271,8 @@ top | 左上角距离画板顶部的距离 | |
 left | 左上角距离画板左侧的距离 | | 
 width | 要画多宽 | 0 | 
 height | 要画多高 | 0 | 
+shadowBlur|阴影模糊|0
+shadowColor|阴影颜色|
 
 ### roundrect(圆角矩形)
 属性 | 含义 | 默认值 | 可选值
@@ -274,6 +283,8 @@ left | 左上角距离画板左侧的距离 | |
 width | 要画多宽 | 0 | 
 height | 要画多高 | 0 | 
 radius |圆角度数|0|
+shadowBlur|阴影模糊|0
+shadowColor|阴影颜色|
 
 ## Q&A
 0. 最佳实践

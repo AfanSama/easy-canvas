@@ -250,7 +250,11 @@ Component({
         left = 0,
         width = 0,
         height = 0,
+        shadowBlur = 0,
+        shadowColor = "",
       } = params
+      this.ctx.shadowBlur = shadowBlur;
+      this.ctx.shadowColor = shadowColor;
       this.ctx.setFillStyle(background)
       this.ctx.fillRect(left, top, width, height)
       this.ctx.restore();
@@ -264,7 +268,9 @@ Component({
         left = 0,
         width = 0,
         height = 0,
-        radius = 0
+        radius = 0,
+        shadowBlur = 0,
+        shadowColor = ""
       } = params
       this.ctx.beginPath();
       this.ctx.moveTo(left, top + radius);
@@ -278,6 +284,8 @@ Component({
       this.ctx.quadraticCurveTo(left, top, left, top + radius);
       this.ctx.closePath();
       this.ctx.restore();
+      this.ctx.shadowBlur = shadowBlur;
+      this.ctx.shadowColor = shadowColor;
       this.ctx.setFillStyle(background)
       this.ctx.fill();
     },
