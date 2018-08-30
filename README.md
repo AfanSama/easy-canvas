@@ -1,5 +1,7 @@
 ## esay-canvas
 
+>开发者工具请打开不校验合法域名，真机调试时请打开调试，真机无法绘制多半是微信安全域名的问题。
+
 新增更新[图片透明度](https://github.com/AfanSama/esay-canvas#image图片)
 
 新增功能[矩形、圆角矩形绘制阴影效果](https://github.com/AfanSama/esay-canvas#rect-矩形线条)
