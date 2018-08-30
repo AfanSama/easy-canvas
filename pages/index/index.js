@@ -71,7 +71,8 @@ Page({
             top: 136,
             left: 42.5,
             width: 290,
-            height: 186
+            height: 186,
+            opacity:70
           },
           {
             type: 'image',

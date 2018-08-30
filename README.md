@@ -1,5 +1,7 @@
 ## esay-canvas
 
+新增更新[图片透明度](https://github.com/AfanSama/esay-canvas#image图片)
+
 新增功能[矩形、圆角矩形绘制阴影效果](https://github.com/AfanSama/esay-canvas#rect-矩形线条)
 
 新增 [esay-canvas](https://github.com/AfanSama/esay-canvas)。之后同步更新。
@@ -113,7 +115,8 @@ git clone https://github.com/AfanSama/esay-canvas
             top: 136,
             left: 42.5,
             width: 290,
-            height: 186
+            height: 186,
+            opacity:70
           },
           {
             type: 'image',
@@ -246,6 +249,7 @@ left | 左上角距离画板左侧的距离 | |
 width | 要画多宽 | 0 | 
 height | 要画多高 | 0 | 
 borderRadius|是否圆形|0|true
+opacity|图片透明度|100|1-100(对应百分比)
 
 ### text（文本）
 属性 | 含义 | 默认值 | 可选值

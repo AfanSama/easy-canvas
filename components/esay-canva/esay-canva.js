@@ -143,8 +143,10 @@ Component({
         left = 0,
         width = 0,
         height = 0,
-        borderRadius = 0
+        borderRadius = 0,
+        opacity = 100,
       } = params
+      this.ctx.globalAlpha = opacity / 100;
       if (borderRadius) {
         this.ctx.fill();
         this.ctx.beginPath()
