@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <image mode='aspectFit' src="{{shareImage}}" class="share-image"></image>
-  <esay-canva painting="{{painting}}" class="canvasdrawer" bind:getImage="eventGetImage"/>
+  <easy-canva painting="{{painting}}" class="canvasdrawer" bind:getImage="eventGetImage"/>
 
   <button type='primary' bind:tap="eventDraw">再绘制一次</button>
 

@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "多图绘制",
   "usingComponents": {
-    "esay-canva": "/components/esay-canva/esay-canva"
+    "easy-canva": "/components/easy-canva/easy-canva"
   }
 }
