@@ -1,12 +1,12 @@
-## esay-canvas
+## easy-canvas
 
 >开发者工具请打开不校验合法域名，真机调试时请打开调试，真机无法绘制多半是微信安全域名的问题。
 
-新增更新[图片透明度](https://github.com/AfanSama/esay-canvas#image图片)
+新增更新[图片透明度](https://github.com/AfanSama/easy-canvas#image图片)
 
-新增功能[矩形、圆角矩形绘制阴影效果](https://github.com/AfanSama/esay-canvas#rect-矩形线条)
+新增功能[矩形、圆角矩形绘制阴影效果](https://github.com/AfanSama/easy-canvas#rect-矩形线条)
 
-新增 [esay-canvas](https://github.com/AfanSama/esay-canvas)。之后同步更新。
+新增 [easy-canvas](https://github.com/AfanSama/easy-canvas)。之后同步更新。
 
 做微信小程序中最好用的 `canvas` 绘图组件之一。
 
@@ -29,7 +29,7 @@
 ## 体验
 
 ```
-git clone https://github.com/AfanSama/esay-canvas
+git clone https://github.com/AfanSama/easy-canvas
 ```
 想在手机上使用配置自己的 `appid` 即可。
 
@@ -39,22 +39,22 @@ git clone https://github.com/AfanSama/esay-canvas
 
 ## 使用
 
-- `git clone https://github.com/AfanSama/esay-canvas` 到本地
-- 把 `components` 中的 `esay-canvas` 拷贝到自己项目下。
+- `git clone https://github.com/AfanSama/easy-canvas` 到本地
+- 把 `components` 中的 `easy-canvas` 拷贝到自己项目下。
 - 在使用页面注册组件
   ```json
   {
     "usingComponents": {
-      "esay-canva": "/components/esay-canva/esay-canva"
+      "easy-canva": "/components/easy-canva/easy-canva"
     }
   }
   ```
 - 在页面 `**.wxml` 文件中加入如下代码
   ```html
-  <esay-canvas painting="{{painting}}" bind:getImage="eventGetImage"/>
+  <easy-canvas painting="{{painting}}" bind:getImage="eventGetImage"/>
   ```
   `painting` 是需要传入的 `json`。 `getImage` 方法是绘图完成之后的回调函数，在 `event.detail` 中返回绘制完成的图片地址。
-- 当前栗子中的 `painting` 简单展示一下。详细配置请看 [API](https://github.com/AfanSama/esay-canvas#api)
+- 当前栗子中的 `painting` 简单展示一下。详细配置请看 [API](https://github.com/AfanSama/easy-canvas#api)
 
 
   <details><summary>painting（点击展开）</summary><br>
